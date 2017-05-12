@@ -1,10 +1,10 @@
 #include "hotel.h"
 
 void WriteRoomCount(rooms &availableRooms){
-    cout << "Êîëè÷åñòâî ñâîáîäíûõ íîìåðîâ îáû÷íîãî êëàññà: " << availableRooms.standart << endl;
-    cout << "Êîëè÷åñòâî ñâîáîäíûõ ïîëóëþêñîâ: " << availableRooms.juniorSuite << endl;
-    cout << "Êîëè÷åñòâî ñâîáîäíûõ ëþêñîâ: " << availableRooms.suite << endl;
-    cout << "Êîëè÷åñòâî ñâîáîäíûõ êîðîëåâñêèõ íîìåðîâ: " << availableRooms.royalSuite << endl;
+    cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð² Ð¾Ð±Ñ‹Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ»Ð°ÑÑÐ°: " << availableRooms.standart << endl;
+    cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… Ð¿Ð¾Ð»ÑƒÐ»ÑŽÐºÑÐ¾Ð²: " << availableRooms.juniorSuite << endl;
+    cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… Ð»ÑŽÐºÑÐ¾Ð²: " << availableRooms.suite << endl;
+    cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… ÐºÐ¾Ñ€Ð¾Ð»ÐµÐ²ÑÐºÐ¸Ñ… Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð²: " << availableRooms.royalSuite << endl;
 
     getch();
     system("cls");
@@ -12,7 +12,7 @@ void WriteRoomCount(rooms &availableRooms){
 
 void EarlyDeparture(list<guestInformation> &guestList, rooms &availableRooms, rooms &occupiedRooms){
     WriteGuestList(guestList);
-    cout << "Ââåäèòå íîìåð ïàñïîðòà:\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð¿Ð°ÑÐ¿Ð¾Ñ€Ñ‚Ð°:\n";
     int passportNumber;
     cin >> passportNumber;
     for (list<guestInformation>::iterator it = guestList.begin(); it != guestList.end(); ++it)
@@ -29,17 +29,17 @@ void EarlyDeparture(list<guestInformation> &guestList, rooms &availableRooms, ro
 }
 
 void FindGuest(list<guestInformation> &guestList){
-    cout << "Âûáåðèòå ïîëå äëÿ ïîèñêà:\n";
-    cout << "1. Ôàìèëèÿ\n";
-    cout << "2. Èìÿ\n";
-    cout << "3. Îò÷åñòâî\n";
-    cout << "4. Íîìåð ïàñïîðòà\n";
-    cout << "5. Ïîðÿäêîâûé íîìåð êîìíàòû\n";
-    cout << "6. Äàòà çàñåëåíèÿ\n";
-    cout << "7. Äàòà âûñåëåíèÿ\n";
+    cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð»Ðµ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ°:\n";
+    cout << "1. Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ\n";
+    cout << "2. Ð˜Ð¼Ñ\n";
+    cout << "3. ÐžÑ‚Ñ‡ÐµÑÑ‚Ð²Ð¾\n";
+    cout << "4. ÐÐ¾Ð¼ÐµÑ€ Ð¿Ð°ÑÐ¿Ð¾Ñ€Ñ‚Ð°\n";
+    cout << "5. ÐŸÐ¾Ñ€ÑÐ´ÐºÐ¾Ð²Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñ‹\n";
+    cout << "6. Ð”Ð°Ñ‚Ð° Ð·Ð°ÑÐµÐ»ÐµÐ½Ð¸Ñ\n";
+    cout << "7. Ð”Ð°Ñ‚Ð° Ð²Ñ‹ÑÐµÐ»ÐµÐ½Ð¸Ñ\n";
     int choice;
     cin >> choice;
-    cout << "Ââåäèòå çíà÷åíèå ïîëÿ: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð»Ñ: ";
 
     bool flag = true;
     int intTemp;
@@ -49,7 +49,7 @@ void FindGuest(list<guestInformation> &guestList){
     else
         scanf("%d", &intTemp);
     system("cls");
-    cout << "Ïîäõîäÿùèå ïîñòîÿëüöû:\n";
+    cout << "ÐŸÐ¾Ð´Ñ…Ð¾Ð´ÑÑ‰Ð¸Ðµ Ð¿Ð¾ÑÑ‚Ð¾ÑÐ»ÑŒÑ†Ñ‹:\n";
     for (list<guestInformation>::iterator it = guestList.begin(); it != guestList.end(); ++it){
         switch (choice){
             case 1:
@@ -78,7 +78,7 @@ void FindGuest(list<guestInformation> &guestList){
 
     if (flag){
         system("cls");
-        cout << "Ïîñòîÿëüöåâ íå íàéäåíî!\n";
+        cout << "ÐŸÐ¾ÑÑ‚Ð¾ÑÐ»ÑŒÑ†ÐµÐ² Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾!\n";
     }
 
     getch();
@@ -103,8 +103,8 @@ int DaysCount(char *dateOfArrival, char *departureDate){
 }
 
 void WriteAccomadationCost(int roomType, char *dateOfArrival, char *departureDate){
-    cout << "Ñòîèìîñòü ñóòî÷íîãî ïðîæèâàíèÿ: " << 10 * roomType << " ðóá.\n";
-    cout << "Îáùàÿ ñòîèìîñòü ïðîæèâàíèÿ: " << 10 * roomType * DaysCount(dateOfArrival, departureDate) << " ðóá.\n";
+    cout << "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ ÑÑƒÑ‚Ð¾Ñ‡Ð½Ð¾Ð³Ð¾ Ð¿Ñ€Ð¾Ð¶Ð¸Ð²Ð°Ð½Ð¸Ñ: " << 10 * roomType << " Ñ€ÑƒÐ±.\n";
+    cout << "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð¿Ñ€Ð¾Ð¶Ð¸Ð²Ð°Ð½Ð¸Ñ: " << 10 * roomType * DaysCount(dateOfArrival, departureDate) << " Ñ€ÑƒÐ±.\n";
 }
 
 void ChangeRoomsCount(int roomType, rooms &availableRooms, rooms &occupiedRooms){
@@ -130,7 +130,7 @@ void ChangeRoomsCount(int roomType, rooms &availableRooms, rooms &occupiedRooms)
 
 void DepartureGuests(list<guestInformation> &guestList, char *currentDate, rooms &availableRooms, rooms &occupiedRooms){
     system("cls");
-    cout << "Ñïèñîê âûñåëåííûõ ñåãîäíÿ:\n\n";
+    cout << "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð²Ñ‹ÑÐµÐ»ÐµÐ½Ð½Ñ‹Ñ… ÑÐµÐ³Ð¾Ð´Ð½Ñ:\n\n";
     bool flag = true;
     for (list<guestInformation>::iterator it = guestList.begin(); it != guestList.end();){
         if (!strcmp((*it).departureDate, currentDate)){
@@ -171,40 +171,40 @@ void IntCompare(int first, int second, list<guestInformation>::iterator it, bool
 }
 
 void WriteGuestInformation(guestInformation temp){
-    cout << "Ôàìèëèÿ: " << temp.surname << endl;
-    cout << "Èìÿ: " << temp.name << endl;
-    cout << "Îò÷åñòâî: " << temp.patronymic << endl;
-    cout << "Íîìåð ïàñïîðòà: " << temp.passportNumber << endl;
+    cout << "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: " << temp.surname << endl;
+    cout << "Ð˜Ð¼Ñ: " << temp.name << endl;
+    cout << "ÐžÑ‚Ñ‡ÐµÑÑ‚Ð²Ð¾: " << temp.patronymic << endl;
+    cout << "ÐÐ¾Ð¼ÐµÑ€ Ð¿Ð°ÑÐ¿Ð¾Ñ€Ñ‚Ð°: " << temp.passportNumber << endl;
 
-    cout << "Òèï íîìåðà: ";
+    cout << "Ð¢Ð¸Ð¿ Ð½Ð¾Ð¼ÐµÑ€Ð°: ";
     switch (temp.roomType){
-        case 1: cout << "Îáû÷íûé êëàññ\n"; break;
-        case 2: cout << "Ïîëóëþêñ\n"; break;
-        case 3: cout << "Ëþêñ\n"; break;
-        case 4: cout << "Êîðîëåâñêèé íîìåð\n"; break;
+        case 1: cout << "ÐžÐ±Ñ‹Ñ‡Ð½Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ\n"; break;
+        case 2: cout << "ÐŸÐ¾Ð»ÑƒÐ»ÑŽÐºÑ\n"; break;
+        case 3: cout << "Ð›ÑŽÐºÑ\n"; break;
+        case 4: cout << "ÐšÐ¾Ñ€Ð¾Ð»ÐµÐ²ÑÐºÐ¸Ð¹ Ð½Ð¾Ð¼ÐµÑ€\n"; break;
     }
 
-    cout << "Ïîðÿäêîâûé íîìåð êîìíàòû: " << temp.roomNumber << endl;
-    cout << "Äàòà çàñåëåíèÿ: " << temp.dateOfArrival << endl;
-    cout << "Äàòà âûñåëåíèÿ: " << temp.departureDate << endl;
+    cout << "ÐŸÐ¾Ñ€ÑÐ´ÐºÐ¾Ð²Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñ‹: " << temp.roomNumber << endl;
+    cout << "Ð”Ð°Ñ‚Ð° Ð·Ð°ÑÐµÐ»ÐµÐ½Ð¸Ñ: " << temp.dateOfArrival << endl;
+    cout << "Ð”Ð°Ñ‚Ð° Ð²Ñ‹ÑÐµÐ»ÐµÐ½Ð¸Ñ: " << temp.departureDate << endl;
 }
 
 void WriteGuestList(list<guestInformation> &guestList){
     guestInformation temp;
     int i = 0;
     for (list<guestInformation>::iterator it = guestList.begin(); it != guestList.end(); ++it){
-        cout << "¹" << ++i << endl;
+        cout << "â„–" << ++i << endl;
         WriteGuestInformation(*it);
         cout << endl;
     }
 }
 
 int GetRoomType(rooms &availableRooms){
-    cout << "Âûáåðèòå íóæíûé òèï íîìåðà:\n";
-    cout << "1. Îáû÷íûé êëàññ(îòàëîñü ñâîáîäíûõ íîìåðîâ: " << availableRooms.standart << ")\n";
-    cout << "2. Ïîëóëþêñ(îòàëîñü ñâîáîäíûõ íîìåðîâ: " << availableRooms.juniorSuite << ")\n";
-    cout << "3. Ëþêñ(îòàëîñü ñâîáîäíûõ íîìåðîâ: " << availableRooms.suite << ")\n";
-    cout << "4. Êîðîëåâñêèé íîìåð(îòàëîñü ñâîáîäíûõ íîìåðîâ: " << availableRooms.royalSuite << ")\n";
+    cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð½ÑƒÐ¶Ð½Ñ‹Ð¹ Ñ‚Ð¸Ð¿ Ð½Ð¾Ð¼ÐµÑ€Ð°:\n";
+    cout << "1. ÐžÐ±Ñ‹Ñ‡Ð½Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ(Ð¾Ñ‚Ð°Ð»Ð¾ÑÑŒ ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð²: " << availableRooms.standart << ")\n";
+    cout << "2. ÐŸÐ¾Ð»ÑƒÐ»ÑŽÐºÑ(Ð¾Ñ‚Ð°Ð»Ð¾ÑÑŒ ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð²: " << availableRooms.juniorSuite << ")\n";
+    cout << "3. Ð›ÑŽÐºÑ(Ð¾Ñ‚Ð°Ð»Ð¾ÑÑŒ ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð²: " << availableRooms.suite << ")\n";
+    cout << "4. ÐšÐ¾Ñ€Ð¾Ð»ÐµÐ²ÑÐºÐ¸Ð¹ Ð½Ð¾Ð¼ÐµÑ€(Ð¾Ñ‚Ð°Ð»Ð¾ÑÑŒ ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð²: " << availableRooms.royalSuite << ")\n";
 
     int choice;
     cin >> choice;
@@ -258,20 +258,20 @@ void AddGuest(list<guestInformation> &guestList, rooms &availableRooms, rooms &o
     guestInformation temp;
 
     if (!availableRooms.standart && !availableRooms.juniorSuite && !availableRooms.suite && !availableRooms.royalSuite){
-        cout << "Íåò ñâîáîäíûõ íîìåðîâ!\n";
+        cout << "ÐÐµÑ‚ ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð²!\n";
         return;
     }
 
-    cout << "Ââåäèòå ôàìèëèþ:\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ:\n";
     cin >> temp.surname;
     system("cls");
-    cout << "Ââåäèòå èìÿ:\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ:\n";
     cin >> temp.name;
     system("cls");
-    cout << "Ââåäèòå îò÷åñòâî:\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾Ñ‚Ñ‡ÐµÑÑ‚Ð²Ð¾:\n";
     cin >> temp.patronymic;
     system("cls");
-    cout << "Ââåäèòå íîìåð ïàñïîðòà:\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð¿Ð°ÑÐ¿Ð¾Ñ€Ñ‚Ð°:\n";
     cin >> temp.passportNumber;
     system("cls");
 
@@ -280,7 +280,7 @@ void AddGuest(list<guestInformation> &guestList, rooms &availableRooms, rooms &o
     strcpy(temp.dateOfArrival, currentDate);
     system("cls");
 
-    cout << "Ââåäèòå äàòó îòúåçäà â ôîðìàòå dd.mm.yyyy:\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð°Ñ‚Ñƒ Ð¾Ñ‚ÑŠÐµÐ·Ð´Ð° Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ðµ dd.mm.yyyy:\n";
     cin >> temp.departureDate;
     system("cls");
 
