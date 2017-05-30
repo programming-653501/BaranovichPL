@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.962,C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\Unit2.dfm=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.743,C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\FileManagerForm.dfm=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.934,C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\Unit2.cpp=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.654,C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\FileManager.cbproj=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\Project4.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.969,=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Project4PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.278,C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\Project4.cbproj=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Project4.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.743,C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\FileManagerForm.h=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.962,C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\Unit2.h=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.484,C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\FileManagerPCH1.h=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\Project4PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.151,=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.901,C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\Project4PCH1.h=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Project4PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.121,C:\Users\Public\Pictures\Sample Pictures\Chrysanthemum.jpg=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.403,=C:\Users\Public\Pictures\Sample Pictures\Chrysanthemum.jpg</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.719,C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\FileManagerForm.cpp=C:\Users\Администратор\Documents\Embarcadero\Studio\Projects\Курсач\Unit2.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
